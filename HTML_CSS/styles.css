@@ -1,0 +1,45 @@
+@font-face {
+    src: url(path/to/file.ttf);
+    font-family: arial;
+}
+body  {
+    background-color: white;
+
+    /* we can select colors 4 ways: 
+    name - (red, blue, green)
+    hex - #000000
+    rgb - rgb(255, 100. 30)
+    rsl - hsl(359, 100%, 50%); hue, saturation, lightness
+    */
+}
+
+#title { /* to select item by id */
+    color:black;
+}
+.class1 { /* to select item by class */
+    color:black;
+}
+#styledp1 {
+    font-family: Sans-Serif, Arial; /* fall-back values separated by commas */
+    font-size: 10px;
+    font-size: 0.5em; /* em is just a standard, and the fraction before it is the percentage */
+    font-weight: bold;
+    font-style: italic;
+
+
+
+    /* borders */
+    border-style: solid; /* OR: dotted, dashed, double, groove, ridge, inset, outset, none */
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    /* shorthand version: */
+    border: 2px solid black;
+    border-bottom: 3px groove red;
+    border-top: 3px double yellow;
+    border-left: 3px dotted red;
+    border-right: 3px dashed green;
+}
+#shadows {
+    text-shadow: 2px 2px 5px red, -2px -2px 5px blue; /* horizontal offset, vertical offset, blur, color; multiple shadows*/
+}

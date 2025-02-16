@@ -1,0 +1,234 @@
+<!DOCTYPE html> <!-- this is the html declaration -->
+<html> <!-- this is the html tag -->
+    <head> <!-- contains information about the page, like a title -->
+        <title>My first website</title>
+        <link rel="icon" type="image/png" href="https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png">
+        <link rel="stylesheet" href="styles.css"> <!-- link to stylesheet -->
+    </head>
+    <body>
+        <!-- styled stuff -->
+        <p id="styledp1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Ipsam doloribus odio eos saepe cum recusandae nemo eaque 
+            blanditiis est quod, quam officia expedita nam, explicabo 
+            fugiat assumenda commodi at laudantium?
+        </p>
+
+
+
+        <!-- headings ane parargraphs -->
+        <h1 id="shadows">This is an h1 heading</h1>
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <h4>This is an h4 heading</h4>
+        <h5>This is an h5 heading</h5>
+        <h6>This is an h6 heading</h6>
+        <hr> <!-- Adds a horizontal line across your page -->
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <!-- This is a self-closing tag that adds a line break --> Facilis iusto dolores ratione quia nemo nam sunt, natus cum, dolorem nisi corporis earum fugit pariatur itaque sint. Dolore doloremque iusto a!
+        </p> <!-- Different paragraphs are separated by a line break -->
+        <p>Something</p>
+        <pre> <!-- pre-formatted paragraph -->
+        This formats paragraphs
+            Exactly
+        How you want
+            them to
+        </pre>
+
+
+
+        <!-- hyperlinks -->
+        <a href="https://www.google.com/" target="_blank" title="goes to google">click me</a> <!-- a means anchor, href is link, target _blank opens in new tab, title displays a tip when hovering over link -->
+        <br>
+        <a href="lyrics.html">Song Lyrics</a>
+        <br>
+        <a href="mailto:justvedik@gmail.com">email me lol</a>
+
+
+
+        <!-- images -->
+        <br>
+        <a href="https://google.com">
+        <img src="images/selfie1.PNG" height="300" width="300" alt="selfie of me">
+        </a> <!-- surround image with anchor tag to link the image -->
+
+
+
+        <!-- audio -->
+        <br>
+        <audio controls autoplay muted loop> <!-- self-explanatory tags -->
+            <source src="something.mp3" type="audio/mp3">
+            <source src="something.wav" type="audio/wav"> <!-- fallback source -->
+        </audio>
+
+
+
+        <!-- video (you can also hyperlink this) -->
+        <br>
+        <video width="500px" controls autoplay muted loop>
+            <source src="something.mp4" type="video/mp4">
+            <source src="something.webm" type="video/webm">
+        </video>
+
+
+
+        <!-- text formatting -->
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <tt>monospaced</tt> text</p>
+        <p>This is <mark>marked</mark> text</p>
+
+
+
+        <!-- span & div -->
+        <h1><span style="background-color:blue;">This is a span element</span></h1>
+        <h1><div style="background-color:aqua;">This is a div element</div></h1>
+
+
+
+        <!-- lists -->
+        <!-- Unordered list -->
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>coffee</li>
+            <ul>
+                <li>coffee beans</li>
+                <li>creamer</li>
+                <li>sugar</li>
+            </ul>
+        </ul>
+        <!-- Ordered list -->
+        <ol>
+            <li>Vedik</li>
+        </ol>
+
+        <!-- Description list -->
+        <dl>
+            <dt>Dragon</dt>
+            <dd>A mythical creature that breathes fire and has wings.</dd>
+            <dt>Moby Dick</dt>
+            <dd>A really really big whale</dd>
+        </dl>
+
+
+
+        <!-- tables -->
+        <table border="1" style="background-color:black;">
+            <tr align="center" style="background-color:blue;"> <!-- table row -->
+                <th>Sunday</th> <!-- table header -->
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr align="center" style="background-color:aliceblue;">
+                <td>Closed</td> <!-- table data -->
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </table>
+
+
+
+        <!-- buttons & javascript -->
+        <a href="https://google.com" target="_blank">
+        <button style="font-size:25px; background-color:gray; color:lightblue; border-radius:25px;">click me</button>
+        </a>
+        <br><br>
+        <button onclick="doSomething()" style="font-size:25px; background-color:gray; color:lightblue; border-radius:5px;">click me</button>
+        <p id="greeting">Hello</p>
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML = "Goodbye";
+            }
+        </script> <!-- this is js in html -->
+
+
+
+        <!-- forms -->
+        <form action="index.php" method="POST" enctype="multipart/form-data"> <!-- action is what the form does, usually php with forms, and method POST is for sensitive info, GET for normal, multipart/form-data breaks data into parts then reassembles it later -->
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Spongebob" minlength="6" maxlength="15" required><br> <!-- input is self-closing -->
+
+            <label for="password">password:</label>
+            <input type="password" id="password"><br>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="someone@gmail.com"><br>
+
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="bday">birthdate:</label>
+            <input type="date" id="bday"><br>
+
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+            <label for="title">title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+            <label for="PhD">PhD</label>
+            <input type="radio" id="PhD" value="PhD" name="title"><br>
+
+            <label for="payment">payment</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select><br>
+
+            <label for="subscribe">subscribe</label>
+            <input type="checkbox" id="subscribe"><br>
+
+            <label for="comment">comment:</label>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+
+            <label for="file">file:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+            <input type="reset"><br>
+            <input type="submit">
+
+
+
+            <!-- internal style sheet -->
+            <style>
+                body {
+                    background-color: white;
+                }
+            </style>
+
+
+
+            <!-- header and footer tags -->
+            <header>
+            </header>
+
+            <main>
+            </main>
+
+            <footer> <!-- usually contains info about authoer, copyright data, links to docs -->
+                &copy; copyright reserved<br>
+            </footer>
+        </form>
+    </body>
+</html> <!-- closing html tag -->
